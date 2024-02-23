@@ -53,25 +53,39 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
   // Display updates based on settings
-                    techList.forEach((tech) => {
-                      if (savedSettings[tech]) {
-                        fetch(`https://api.github.com/repos/${tech}/releases/latest`)
-                          .then((response) => response.json())
-                          .then((data) => {
-                            const latestVersion = data.tag_name;
-                            const updateInfo = document.createElement("p");
-                            updateInfo.textContent = `${tech.toUpperCase()}: Latest version - ${latestVersion}`;
-                            document.getElementById("update-info").appendChild(updateInfo);
-                            notificationSound.play(); // Play sound alert
+  techList.forEach((tech) => {
+    if (savedSettings[tech]) {
+      fetch(`https://api.github.com/repos/${tech}/releases/latest`)
+        .then((response) => response.json())
+        .then((data) => {
+          const latestVersion = data.tag_name;
+          const updateInfo = document.createElement("p");
+          updateInfo.textContent = `${tech.toUpperCase()}: Latest version - ${latestVersion}`;
+          document.getElementById("update-info").appendChild(updateInfo);
+          notificationSound.play(); // Play sound alert
+    // Browser notification to alert users about updates
+    // even when the extension popup is closed, ensuring they don't miss important information
+        if (Notification.permission === "granted") {
+          new Notification(`New ${tech.toUpperCase()} Update Available`, {
+            body: `Latest version: ${latestVersion}`,
+          });
+        } else if (Notification.permission !== "denied") {
+          Notification.requestPermission().then((permission) => {
+            if (permission === "granted") {
+              new Notification(`New ${tech.toUpperCase()} Update Available`, {
+                body: `Latest version: ${latestVersion}`,
+              });
+            }
+          });
+        }
+        
+      })
+      .catch((error) => {
+        console.error(`Error fetching data for ${tech}:`, error);
+      });
+  }
+});
 
-                           
-                          })
-                          .catch((error) => {
-                            console.error(`Error fetching data for ${tech}:`, error);
-                          });
-                      }
-                    });
-          
 
   // Toggle settings display
   document
