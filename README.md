@@ -20,6 +20,10 @@ As a software developer, staying up-to-date with the latest versions of tech too
 
 The Tech Updates Notifier Chrome extension simplifies the process of staying informed about these updates, enabling software developers to make informed decisions about when and how to update their tech stack.
 
+## Tech-stacks used
+- Vanilla JavaScript
+- HTML and CSS
+
 ## How to Install and Use:
 1. Download the extension files or clone the repository.
 2. Open Chrome and go to `chrome://extensions/`.
