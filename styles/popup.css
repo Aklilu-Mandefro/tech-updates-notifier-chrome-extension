@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  max-width: 300px;
+  margin: 50px auto;
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+}
+
+.dark-mode .container {
+  background-color: #333;
+  color: #fff;
+}
+
+.settings-container #settings-container {
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+.dark-mode-toggle {
+  margin-top: 10px;
+}
+
+
+h1 {
+  margin-bottom: 20px; 
+}
+
+#inline-message {
+  display: none; /* Hide the message by default */
+  padding: 10px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+

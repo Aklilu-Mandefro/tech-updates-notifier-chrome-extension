@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Updates Notifier</title>
+    <link rel="stylesheet" href="styles/popup.css" id="theme-stylesheet" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <h1>Tech Updates Notifier</h1>
+
+      <div id="inline-message"> </div>
+   
+      <p id="update-info">Checking for updates...</p>
+      <button type="button" id="settings-btn">Settings</button>
+      <button type="button" id="dark-mode-toggle">Dark Mode</button>
+    </div>
+    <div
+      class="settings-container"
+      id="settings-container"
+      style="display: none"
+    >
+      <h2>Settings</h2>
+      <label
+        ><input type="checkbox" class="tech-checkbox" value="react" />
+        React</label
+      ><br />
+      <label
+        ><input type="checkbox" class="tech-checkbox" value="node" />
+        Node.js</label
+      ><br />
+
+      <label
+        ><input type="checkbox" class="tech-checkbox" value="express" />
+        Express</label
+      ><br />
+      <label
+        ><input type="checkbox" class="tech-checkbox" value="mongodb" />
+        MongoDB</label
+      ><br />
+
+      <label
+        ><input type="checkbox" class="tech-checkbox" value="next" />
+        Next.js</label
+      ><br />
+      <label
+        ><input type="checkbox" class="tech-checkbox" value="jasmine" />
+        Jasmine</label
+      ><br />
+
+      <label
+        ><input type="checkbox" class="tech-checkbox" value="jest" />
+        Jest</label
+      ><br />
+      <label
+        ><input type="checkbox" class="tech-checkbox" value="cypress" />
+        Cypress</label
+      ><br />
+      <label
+        ><input type="checkbox" class="tech-checkbox" value="git" /> git</label
+      ><br />
+      <!-- Add checkboxes for other technologies here -->
+      <button id="save-settings-btn">Save Settings</button>
+    </div>
+    <script src="scripts/popup.js"></script>
+  </body>
+</html>
