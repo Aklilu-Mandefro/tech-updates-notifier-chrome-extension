@@ -78,3 +78,4 @@ Contributions to enhance the functionality of the app are welcome! As a staring 
 
 Feel free to fork the repository, make improvements, and submit a pull request with your enhancements!
 
+### 💙 If you like this project, give it a ⭐ and share it with friends!
