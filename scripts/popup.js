@@ -11,9 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "jest",
     "git",
   ];
-
-
-
+  const notificationSound = new Audio("notification-sounds/notification.mp3");
   const themeToggle = document.getElementById("dark-mode-toggle");
   const container = document.getElementById("container");
   // Load saved settings or use default
@@ -64,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             const updateInfo = document.createElement("p");
                             updateInfo.textContent = `${tech.toUpperCase()}: Latest version - ${latestVersion}`;
                             document.getElementById("update-info").appendChild(updateInfo);
-                        
+                            notificationSound.play(); // Play sound alert
 
                            
                           })
