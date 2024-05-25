@@ -56,29 +56,7 @@ By offering icons in various sizes, you can ensure that your Chrome extension pr
 
 
 ## Contribution:
-Contributions to enhance the functionality of the app are welcome! As a staring point, here are some features to work on:
-
-- **Custom Notifications**: Implement the ability for users to customize the notification style, including sound, frequency, and visual appearance.
-  
-- **Version Comparison**: Add a feature that compares the user's current version of a tech tool with the latest version to highlight differences and improvements.
-
-- **Release Notes Viewer**: Allow users to view the release notes directly within the extension for each update, providing more detailed information about changes and new features.
-
-- **Browser Notifications**: Integrate browser notifications to alert users about updates even when the extension popup is closed, ensuring they don't miss important information.
-
-- **Update History**: Create a section that displays the update history for each tech tool, showing a timeline of past releases and changes.
-
-- **Email Notifications**: Enable users to receive update notifications via email, providing an additional communication channel for staying informed about tech tool updates.
-
-- **Localization support for multiple languages**: Add support for multiple languages to make the extension accessible to a wider audience. 
-
-- **Search Functionality**: Add a search feature that allows users to quickly find specific tech tools and their update information within the extension.
-
-- **Sync functionality**: Create a feature that allows users to sync their preferences or data across different devices where the extension is installed.
-
-- **Report issues functionality**: Introduce a feature to provide feedback or report issues related to specific tech-stacks directly within the extension.
-
-- **And a lot more**: come up with a new feature to make the app advanced and desirable 
+Contributions to enhance the functionality of the app are welcome! 
 
 Feel free to fork the repository, make improvements, and submit a pull request with your enhancements!
 
